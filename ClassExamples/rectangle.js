@@ -1,7 +1,10 @@
 class rectangle{
   /*
-  loaded image to reference
-  rectangle portion of the image
+  rectangle portion
+  x=left edge
+  y=top edge
+  w=width
+  h=height
   */
   constructor(x,y,w,h)
   {
