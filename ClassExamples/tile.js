@@ -1,4 +1,5 @@
 class tile{
+  
   /*
   loaded image to reference
   rectangle portion of the image
@@ -8,6 +9,7 @@ class tile{
       this.img = img;
       this.r = portion;
   }
+  //properties so we can use .x notation
   get x() {return this.r.x;}
   get y() {return this.r.y;}
   get w() {return this.r.w;}
