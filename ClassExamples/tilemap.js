@@ -5,6 +5,8 @@ class tilemap{
   off;// = new Vector2(0,0);
   tileset = [];
   angle = 0;
+  //data or functions begining with # are private to the class, they have to be declared here before use
+  //the # becomes part of the name
   #rows;
   #cols;
   #tw;
@@ -12,24 +14,28 @@ class tilemap{
   #drawmode;
   constructor(r,c, w, h, sketch)
   {
-    this.dataMembers();
+    this.#dataMembers();
     this.sk = sketch;
     this.setEmptyMap(r, c, 0);
-    //
+    //setting private fields
     this.#rows = r;
     this.#cols = c;
     this.#tw = w;
     this.#th = h;
     
   }
+  //properties of the class
+  //notice the private data members being accessed through the encapsulation here
   get cols() {return this.#cols;}
   get rows() {return this.#rows;}
   get tw() {return this.#tw}
   get th() {return this.#th}
   get width() {return this.#tw * this.#cols;}
   get height() {return this.#th * this.#rows;}
+  
   // sets up the data members of the class
-  dataMembers(){
+  //this is a private function/method of the class
+  #dataMembers(){
     //this.tileset = [];
     this.off = new vector2(0,0);
     // this.scale = new vector2(1,1);
