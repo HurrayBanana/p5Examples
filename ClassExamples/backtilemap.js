@@ -1,7 +1,9 @@
+//inherits from tilemap
 class backtilemap extends tilemap{
   
  
   constructor(sketch, tex){
+    //call base class constructor then do your extra construction items
     super(9,9,32,32,sketch);
     this.tex = tex;
     
@@ -11,6 +13,7 @@ class backtilemap extends tilemap{
     this.#genmap();
   }
   draw(){
+    //use super to call base class methods
     super.draw();
     //console.log(this.sel);
     this.highlightTile();
