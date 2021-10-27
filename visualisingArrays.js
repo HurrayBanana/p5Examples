@@ -1,3 +1,5 @@
+//a plain global dom implemented sketch for messing with arrays 1d and 2d
+
 //let fruits = ['Apple', 'Banana'];
 
 let stuff = [];
